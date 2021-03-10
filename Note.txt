@@ -1,0 +1,37 @@
+Question 1: When you compile a program written in the Java programming language, the compiler converts the human-readable
+ source file into platform-independent code that a Java Virtual Machine can understand. What is this platform-independent 
+code called?
+Answer 1: Bytecode.
+Question 2: Which of the following is not a valid comment:
+a. /** comment */
+b. /* comment */
+c. /* comment
+d. // comment
+Answer 2: c is an invalid comment.
+Question 3: What is the first thing you should check if you see the following error at runtime:
+Exception in thread "main" java.lang.NoClassDefFoundError:
+HelloWorldApp.java.
+Answer 3: Check your classpath. Your class cannot be found.
+Question 4: What is the correct signature of the main method?
+Answer 4: The correct signature is public static void main(String[] args) or public static void main(String... args)
+Question 5: When declaring the main method, which modifier must come first, public or static?
+Answer 5: They can be in either order, but the convention is public static.
+Question 6: What parameters does the main method define?
+Answer 6: The main method defines a single parameter, usually named args, whose type is an array of String objects.
+Exercises
+Exercise 1: Change the HelloWorldApp.java program so that it displays Hola Mundo! instead of Hello World!.
+Answer 1: This is the only line of code that must change:
+System.out.println("Hola Mundo!"); //Display the string.
+Exercise 2: You can find a slightly modified version of HelloWorldApp here: HelloWorldApp2.java
+The program has an error. Fix the error so that the program successfully compiles and runs. What was the error?
+Answer 2: Here's the error you get when you try to compile the program:
+HelloWorldApp2.java:7: unclosed string literal
+        System.out.println("Hello World!); //Display the string.
+                           ^
+HelloWorldApp2.java:7: ')' expected
+        System.out.println("Hello World!); //Display the string.
+                                                                ^
+2 errors
+To fix this mistake, you need to close the quotation marks around the string. Here is the correct line of code:
+ System.out.println("Hello World!"); //Display the string.
+

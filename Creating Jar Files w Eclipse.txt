@@ -1,0 +1,18 @@
+Creating a Jar File using Eclipse 
+ 
+
+Right click on the project for which you want to create the jar file and choose Export > Java >  JAR file.
+
+JAR files can contain either compiled code, source code, or both. By default, Eclipse assumes you're exporting 
+compiled code, so it only lists .class files and other files required by the compiled code.
+
+To change this, modify the checkboxes right below the folder/file windows so that "Export generated class files
+ and resources" is unchecked and "Export java source files and resources" is checked. If you are submitting a 
+project via a JAR file and you forget to do this, you will not provide your .java files.
+
+Choose a location on your computer for your JAR file and then hit "Finish". You are now ready to submit the jar 
+file you just saved.
+
+You can test whether or not your JAR file worked by creating a new Project, right click on it, and import your
+ JAR file from an Archive into that new project. If the new project you created looks just like your original 
+project, chances are your export worked correctly.

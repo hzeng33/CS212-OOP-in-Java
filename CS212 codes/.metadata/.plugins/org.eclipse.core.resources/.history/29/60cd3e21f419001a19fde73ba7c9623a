@@ -1,0 +1,53 @@
+
+/**
+ * Sorted CandleList
+ * @author Hannah Zeng
+ * Lab section 11D
+ *
+ */
+public class SortedCandleList extends CandleList{
+    /**
+     * No-argument constructor.
+     */
+	public SortedCandleList() {
+		// System will automatically call the default constructor.
+	}
+	
+	
+	/**
+	 * Add method
+	 * @param c: Candle object
+	 */
+	public void add(Candle c) {
+		//Create a new node.
+		CandleNode newCandle = new CandleNode(c);
+		CandleNode current = first.next;
+		CandleNode previous= first;
+		
+		//Keep adding candle nodes to the CandleList and rearrange the positions. 
+		while((current!= null) && (newCandle.data.getPrice()> current.data.getPrice())) {
+			previous = current;
+			current = current.next;
+		}
+		//Inserting candle node to a proper position in the list.
+		newCandle.next = current;
+		previous.next = newCandle;
+	}
+	
+	
+	public static boolean findItem (float price) {
+		
+		CandleNode current = first.next;
+	    CandleNode previous = first;
+		
+		
+		if((current.data.getPrice()== price) || (current.data.getPrice()<price)) return true;
+		else
+			return false;
+		
+		
+	}
+	
+	
+
+}

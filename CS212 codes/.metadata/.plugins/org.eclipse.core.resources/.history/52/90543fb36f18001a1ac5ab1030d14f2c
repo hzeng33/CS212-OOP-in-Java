@@ -1,0 +1,11 @@
+
+
+public class NewList extends CandleList {
+	
+	public NewList() {
+		// System will automatically call the default constructor.
+	}
+	
+	
+
+}

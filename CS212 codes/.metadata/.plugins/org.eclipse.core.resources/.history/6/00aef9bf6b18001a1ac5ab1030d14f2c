@@ -1,0 +1,25 @@
+
+import javax.swing.*;
+import java.awt.event.*;
+
+public class EditMenuHandler implements ActionListener {
+	
+	JFrame jFrame;
+	static float inputPrice;
+	static SortedCandleList newSorted = new SortedCandleList();
+	
+	public EditMenuHandler(JFrame jf) {
+		jFrame=jf;
+	}
+	
+	public void actionPerformed (ActionEvent event) {
+		String menuName = event.getActionCommand();
+		
+		if(menuName.equals("Search"))
+			inputPrice=Float.parseFloat(JOptionPane.showInputDialog(null,"Enter a price: "));
+		
+		System.out.print(newSorted.FindItem(inputPrice));
+		
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;TextFileInput.java&apos; to &apos;Lab6/src&apos;&#x0D;&#x0A;- Original project: &apos;Lab5&apos;&#x0D;&#x0A;- Destination element: &apos;Lab6/src&apos;&#x0D;&#x0A;- Original element: &apos;TextFileInput.java&apos;" description="Copy compilation unit" destination="=Lab6/src" element1="/src&lt;{TextFileInput.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1570207337435" units="1" version="1.0"/>
+</session>
